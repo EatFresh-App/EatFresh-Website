@@ -100,7 +100,7 @@ const Footer = () => {
 						{footData?.map((f: FootSection, index: number) => (
 							<div key={index}>
 								<p className="font-semibold text-[15px] text-[#979797] -tracking-[0.5px]">{f?.name}</p>
-								<div className="font-light text-[13px] text-white flex flex-col gap-3 sm:gap-4 mt-4">
+								<div className="font-light text-[14px] text-white flex flex-col gap-3 sm:gap-4 mt-4">
 									{f?.items?.map((m: FootItem, index: number) => (
 										<Link
 											href={m?.link ?? "#"}

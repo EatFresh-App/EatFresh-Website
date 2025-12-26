@@ -1,12 +1,24 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import React from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
+import { useState, useEffect } from "react";
 const Hero = () => {
+	const notifications = ["/notification.png", "/notification2.png", "/notification3.png"];
+	const [current, setCurrent] = useState(0);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setCurrent((prev) => (prev + 1) % notifications.length); // cycle
+		}, 4000); // 3 seconds
+
+		return () => clearInterval(interval);
+	}, []);
+
 	return (
 		<div className="bg-[url('/hero-bg.jpg')] w-full bg-cover bg-center pt-20 pb-20 lg:pb-0 ">
-			<div className=" w-full flex justify-between max-w-[1400px] mx-auto h-auto px-3 sm:px-6 lg:px-10 2xl:px-0 overflow-hidden">
-				<div className="w-full lg:w-fit">
+			<div className=" w-full flex justify-between max-w-[1400px] mx-auto h-auto px-3 sm:px-6 lg:px-10 2xl:px-0 overflow-hidden lg:pt-2">
+				<div className="w-full lg:w-fit lg:mt-16">
 					<motion.p
 						className="text-white text-[22px] font-medium -tracking-[1px] text-center lg:text-start"
 						initial={{ y: 50, opacity: 0 }}
@@ -92,14 +104,23 @@ const Hero = () => {
 				</div>
 
 				<motion.div
-					className="hidden lg:block"
+					className="hidden lg:block pt-6"
 					initial={{ x: 50, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
 					transition={{ duration: 0.5, ease: "easeIn", delay: 0.4 }}
 				>
-					<div className="relative w-[300px] h-[75px] -ml-45 -mb-6 xl:-mb-8">
-						<Image src="/notification.png" alt="" fill className="object-cover" />
-					</div>
+					<AnimatePresence mode="wait">
+						<motion.div
+							key={notifications[current]} // important for AnimatePresence
+							className="relative w-[350px] h-[80px] -ml-55 -mb-6 xl:-mb-6"
+							initial={{ opacity: 0, y: 20 }}
+							animate={{ opacity: 1, y: 0 }}
+							exit={{ opacity: 0, y: -20 }}
+							transition={{ duration: 0.5, ease: "easeOut" }}
+						>
+							<Image src={notifications[current]} alt="" fill className="object-cover" />
+						</motion.div>
+					</AnimatePresence>
 					<div className="relative w-[420px] h-[540px]">
 						<Image src="/phone.png" alt="" fill className="object-contain" />
 					</div>
