@@ -16,7 +16,7 @@ const Hero = () => {
 	}, []);
 
 	return (
-		<div className="bg-[url('/hero-bg.jpg')] w-full bg-cover bg-center pt-20 pb-20 lg:pb-0 ">
+		<div className="bg-[url('/hero-bg.webp')] w-full bg-cover bg-center pt-20 pb-20 lg:pb-0">
 			<div className=" w-full flex justify-between max-w-[1400px] mx-auto h-auto px-3 sm:px-6 lg:px-10 2xl:px-0 overflow-hidden lg:pt-2">
 				<div className="w-full lg:w-fit lg:mt-16">
 					<motion.p

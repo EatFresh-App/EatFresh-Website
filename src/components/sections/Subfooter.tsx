@@ -13,7 +13,7 @@ const Subfooter = () => {
 	];
 	return (
 		<div className="py-20 bg-[#1D1E1F] px-3 sm:px-6 lg:px-10 2xl:px-0">
-			<div className="max-w-[1400px] w-full mx-auto">
+			<div className="max-w-[1400px] w-full mx-auto bg-[#1D1E1F]">
 				<div className="flex flex-col gap-2">
 					<p className="text-center text-white w-fit mx-auto font-medium text-xl">Get EatFresh </p>
 					<h1 className="text-center text-white w-fit mx-auto text-5xl max-w-lg font-bold">

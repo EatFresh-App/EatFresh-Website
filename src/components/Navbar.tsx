@@ -28,7 +28,8 @@ const Navbar = () => {
 	];
 
 	return (
-		<div className="fixed left-0 right-0 py-4 w-full backdrop-blur-md px-3 sm:px-6 lg:px-10 2xl:px-0 z-20">
+		<div className="fixed left-0 right-0 py-4 w-full backdrop-blur-md px-3 sm:px-6 lg:px-10 2xl:px-0 z-20 bg-[rgba(25,31,40,0.5)]">
+			{/* mobile sidebar */}
 			<AnimatePresence mode="wait">
 				{menuOpen && (
 					<motion.div
@@ -101,6 +102,7 @@ const Navbar = () => {
 				)}
 			</AnimatePresence>
 
+			{/* web navbar */}
 			<motion.div
 				className="max-w-[1400px] w-full mx-auto flex justify-between items-center"
 				initial={{ y: -50, opacity: 0 }}

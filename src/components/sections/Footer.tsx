@@ -88,7 +88,7 @@ const Footer = () => {
 
 	return (
 		<div className="bg-[#1D1E1F]">
-			<div className="max-w-[1400px] w-full mx-auto pb-20 px-3 sm:px-6 lg:px-10 2xl:px-0 h-auto">
+			<div className="max-w-[1400px] w-full mx-auto px-3 sm:px-6 lg:px-10 2xl:px-0 h-auto">
 				<div className="flex flex-col xl:flex-row justify-between w-full gap-10 xl:gap-0">
 					<p className="max-w-sm text-sm font-light text-white -tracking-[0.2px]">
 						Inspired by nature, LilyPad is a social platform whether it’s meaningful talks or lighthearted
@@ -96,7 +96,7 @@ const Footer = () => {
 						time.
 					</p>
 
-					<div className="flex flex-col sm:flex-row gap-8 lg:gap-12 2xl:gap-16 mb-20">
+					<div className="flex flex-col sm:flex-row gap-8 lg:gap-12 2xl:gap-16">
 						{footData?.map((f: FootSection, index: number) => (
 							<div key={index}>
 								<p className="font-semibold text-[15px] text-[#979797] -tracking-[0.5px]">{f?.name}</p>
@@ -119,9 +119,9 @@ const Footer = () => {
 				</div>
 			</div>
 			<div className="max-w-[1400px] w-full mx-auto pb-20 px-3 sm:px-6 lg:px-10 2xl:px-0">
-				<hr className="border-white opacity-10" />
+				<hr className="border-white opacity-10 my-10" />
 
-				<p className="text-sm font-light text-[#A8A8A8] mt-10">
+				<p className="text-sm font-light text-[#A8A8A8]">
 					LilyPad is an application for Android and iOS mobile phone to meet and connect with strangers
 					anonymously. LilyPad is where conversations spark, and connections happen. Join a world of
 					spontaneous chats with people from all walks of life. Anonymity, real-time engagement, and
@@ -150,7 +150,7 @@ const Footer = () => {
 						))}
 					</div>
 				</div>
-				<div className="w-full mt-20">
+				<div className="w-full mt-10 lg:mt-20">
 					<Image
 						src="/footer logo.svg"
 						width={1200} // your image's natural width
