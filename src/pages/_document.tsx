@@ -20,7 +20,7 @@ export default function Document() {
 					content="Your everyday meals freshly made just for you.
 "
 				/>
-				<meta property="og:url" content="https://lily-pad-website-tau.vercel.app/" />
+				<meta property="og:url" content="https://eatfresh.benagos.com" />
 				<meta property="og:author" name="Afolabi Babatunde Joseph" />
 				<meta property="og:author" name="Ehizojie Ihayere" />
 			</Head>
