@@ -18,7 +18,7 @@ const Hero = () => {
 	return (
 		<div className="bg-[url('/hero-bg.webp')] w-full bg-cover bg-center pt-20 pb-20 lg:pb-0">
 			<div className=" w-full flex justify-between max-w-[1400px] mx-auto h-auto px-3 sm:px-6 lg:px-10 2xl:px-0 overflow-hidden lg:pt-2">
-				<div className="w-full lg:w-fit lg:mt-16">
+				<div className="w-full lg:w-fit lg:mt-16 flex flex-col">
 					<motion.p
 						className="text-white text-[22px] font-medium -tracking-[1px] text-center lg:text-start"
 						initial={{ y: 50, opacity: 0 }}
@@ -61,13 +61,14 @@ const Hero = () => {
 
 					{/* achievements */}
 					<motion.div
-						className="flex flex-col items-center gap-5 sm:flex-row sm:items-stretch sm:gap-1 mt-16 mx-auto w-fit lg:mx-0"
+						// className="flex flex-col items-center gap-5 sm:flex-row sm:items-stretch sm:gap-1 mt-16 mx-auto w-fit lg:mx-0"
+						className="flex items-center gap-2 lg:mt-auto mt-20 lg:mb-20 mx-auto w-fit lg:mx-0"
 						initial={{ y: 0, opacity: 0 }}
 						whileInView={{ y: 0, opacity: 1 }}
 						transition={{ duration: 0.3, ease: "easeIn", delay: 1 }}
 					>
 						{/* achievement 1 */}
-						<div className="flex items-stretch sm:-ml-2">
+						{/* <div className="flex items-stretch sm:-ml-2">
 							<div className="relative w-14 h-auto">
 								<Image src="/flower.png" alt="" fill className="object-contain" />
 							</div>
@@ -80,11 +81,10 @@ const Hero = () => {
 							<div className="relative w-14 h-auto">
 								<Image src="/flower2.png" alt="" fill className="object-contain" />
 							</div>
-						</div>
+						</div> */}
 
 						{/* achievement 2 */}
-
-						<div className="flex items-stretch">
+						{/* <div className="flex items-stretch">
 							<div className="relative w-14 h-auto">
 								<Image src="/flower.png" alt="" fill className="object-contain" />
 							</div>
@@ -99,7 +99,9 @@ const Hero = () => {
 							<div className="relative w-14 h-auto">
 								<Image src="/flower2.png" alt="" fill className="object-contain" />
 							</div>
-						</div>
+						</div> */}
+						<Image src="nigeria.svg" height={16} width={16} alt="" />
+						<p>Currently available for Lagos, Nigeria</p>
 					</motion.div>
 				</div>
 

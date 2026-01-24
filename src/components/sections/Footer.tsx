@@ -16,7 +16,7 @@ interface FootSection {
 const Footer = () => {
 	const footData: FootSection[] = [
 		{
-			name: "Get LilyPad",
+			name: "Get EatFresh",
 			items: [
 				{
 					name: "iPhone",
@@ -32,16 +32,19 @@ const Footer = () => {
 			name: "Need help",
 			items: [
 				{
-					name: "LilyPad Commons",
-					link: "/",
+					name: "EatFresh Commons",
+					link:
+						"https://benagos.notion.site/EatFresh-Commons-2dc3c9f91dc78061b3d6fe86b5c498a6?source=copy_link",
 				},
 				{
 					name: "Community Guidelines",
-					link: "/",
+					link:
+						"https://benagos.notion.site/EatFresh-Community-Guidelines-TOS-2dc3c9f91dc7818c806ec25861954b59?source=copy_link",
 				},
 				{
 					name: "Terms of Service",
-					link: "/",
+					link:
+						"https://benagos.notion.site/EatFresh-Terms-Condition-2dc3c9f91dc78131980cf91f315f94b1?source=copy_link",
 				},
 			],
 		},
@@ -50,19 +53,19 @@ const Footer = () => {
 			items: [
 				{
 					name: "TikTok",
-					link: "/",
+					link: "https://www.tiktok.com/@benagoshq",
 				},
 				{
 					name: "Instagram",
-					link: "/",
+					link: "https://instagram.com/eatfresh_app",
 				},
 				{
 					name: "X(Twitter)",
-					link: "/",
+					link: "https://x.com/eatfresh_app",
 				},
 				{
 					name: "Linkedin",
-					link: "/",
+					link: "https://www.linkedin.com/showcase/eatfreshapp",
 				},
 			],
 		},
@@ -70,30 +73,46 @@ const Footer = () => {
 			name: "Contact",
 			items: [
 				{
-					name: "Benagos LLC, Benagos Technologies Limited Lekki, Lagos, Nigeria",
+					name: "Benagos Technologies LimitedLagos, Nigeria",
 				},
 				{
-					name: "lilypad@benagos.com",
+					name: "eatfresh@benagos.com",
 				},
 			],
 		},
 	];
 
 	const altFootData: FootItem[] = [
-		{ name: "Report User", link: "/" },
-		{ name: "Privacy and Terms", link: "/" },
-		{ name: "Contact LilyPad", link: "/" },
-		{ name: "Brand Guide", link: "/" },
+		{
+			name: "Report Kitchen",
+			link:
+				"https://benagos.notion.site/EatFresh-Support-Channels-2dc3c9f91dc781a8860ad6cce56c0b14?source=copy_link",
+		},
+		{
+			name: "Privacy and Terms",
+			link:
+				"https://benagos.notion.site/EatFresh-Privacy-2dc3c9f91dc781a3a669d240df47c806?source=copy_link",
+		},
+		{
+			name: "Contact LilyPad",
+			link:
+				"https://benagos.notion.site/EatFresh-Cookie-Policy-2e73c9f91dc780d6a211f46888946ebb?source=copy_link",
+		},
+		{
+			name: "Brand Guide",
+			link:
+				"https://benagos.notion.site/EatFresh-Brand-Guide-2e73c9f91dc780dfa622f76dffd03dde?source=copy_link",
+		},
 	];
 
 	return (
 		<div className="bg-[#1D1E1F]">
 			<div className="max-w-[1400px] w-full mx-auto px-3 sm:px-6 lg:px-10 2xl:px-0 h-auto">
 				<div className="flex flex-col xl:flex-row justify-between w-full gap-10 xl:gap-0">
-					<p className="max-w-sm text-sm font-light text-white -tracking-[0.2px]">
-						Inspired by nature, LilyPad is a social platform whether it’s meaningful talks or lighthearted
-						moments, LilyPad is your safe, welcoming space to explore the world, one conversation at a
-						time.
+					<p className="max-w-xs text-sm font-light text-white -tracking-[0.2px]">
+						EatFresh is a bulk meal delivery platform connecting people with trusted local chefs. We make
+						it easy to eat well, save time, and plan your meals — without compromising freshness or
+						quality.
 					</p>
 
 					<div className="flex flex-col sm:flex-row gap-8 lg:gap-12 2xl:gap-16">
@@ -122,22 +141,20 @@ const Footer = () => {
 				<hr className="border-white opacity-10 my-10" />
 
 				<p className="text-sm font-light text-[#A8A8A8]">
-					LilyPad is an application for Android and iOS mobile phone to meet and connect with strangers
-					anonymously. LilyPad is where conversations spark, and connections happen. Join a world of
-					spontaneous chats with people from all walks of life. Anonymity, real-time engagement, and
-					endless possibilities await. Dive in and discover who’s out there, one chat at a time.
-					Unauthorized reproduction or redistribution of copyrighted materials on this website and
-					Kusala&apos;s digital media pages is strictly prohibited. Additional disclosures can be found
-					in the resources section of our website.
+					EatFresh is a premium meal delivery platform for iOS and Android users connecting people with
+					trusted local chefs who take pride in how food is prepared, packaged, and delivered. Built to
+					support busy lifestyles without compromising freshness or quality, EatFresh makes it easy to
+					plan meals ahead, eat consistently well, and build lasting relationships with chefs you can
+					trust.
 					<br /> <br />
-					From a single heart, we build for the curious, the creative, and the future. Benagos is a
-					product studio on a mission to build human-first digital tools — for connection, creativity,
-					clarity, and change. Each of our products is a petal, blooming from one vision: to make the
-					internet more thoughtful.
+					Designed and built by Benagos, a product studio focused on creating thoughtful, human-first
+					digital experiences, EatFresh reflects a deep belief that good food should be reliable,
+					transparent, and made with care. Every detail — from chef onboarding to delivery flow — is
+					intentionally crafted to bring clarity, consistency, and confidence back to everyday meals.
 				</p>
 				<div className="my-10 justify-between w-full flex flex-col md:flex-row md:items-center gap-5">
 					<p className="text-white font-light text-sm -tracking-[0.5px]">
-						© LilyPad, {new Date().getFullYear()}. A Benagos Product
+						© EatFresh, {new Date().getFullYear()}. A Benagos Product
 					</p>
 					<div className="flex flex-wrap items-center">
 						{altFootData.map((n: FootItem, index: number, arr: FootItem[]) => (

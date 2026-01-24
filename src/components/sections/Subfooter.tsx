@@ -17,7 +17,7 @@ const Subfooter = () => {
 				<div className="flex flex-col gap-2">
 					<p className="text-center text-white w-fit mx-auto font-medium text-xl">Get EatFresh </p>
 					<h1 className="text-center text-white w-fit mx-auto text-5xl max-w-lg font-bold">
-						Your favourite meal, delivered fresh.{" "}
+						Your favourite meal, delivered fresh just the way you like them.
 					</h1>
 				</div>
 				<div className="flex flex-col sm:flex-row gap-6 mt-10 mb-20 items-center justify-center w-fit mx-auto">

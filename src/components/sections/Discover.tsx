@@ -1,14 +1,24 @@
 import React from "react";
 import Image from "next/image";
 import CustomButton from "../CustomButton";
-import { Mic, MessageCircle } from "lucide-react";
+import { Mic, MessageCircle, Phone, Smartphone } from "lucide-react";
 import Download_ShareBtn from "../Download_ShareBtn";
 import { motion } from "framer-motion";
+import { LuYoutube } from "react-icons/lu";
+import Link from "next/link";
+import { IconType } from "react-icons";
+import { PiChefHatBold } from "react-icons/pi";
+import { FaSearchPlus } from "react-icons/fa";
+import { Star, Zap, MapPin, Clock } from "lucide-react";
 interface Disc {
 	image: string;
 	type: string;
 	name: string;
 	info: string;
+	iconLeft: IconType;
+	iconRight: IconType;
+	iconLeftName: string;
+	iconRightName: string;
 }
 const Discover = () => {
 	const discProps: Disc[] = [
@@ -16,22 +26,32 @@ const Discover = () => {
 			type: "FEEDS",
 			name: "Discover vendors in a new way",
 			info:
-				"Taste the flavours of the world with our wide selection of restaurants — discover hidden gems.",
+				"Explore chefs and kitchens through real meals, real stories, and real customer experiences.",
 			image: "/disc1.png",
+			iconLeft: PiChefHatBold,
+			iconRight: FaSearchPlus,
+			iconLeftName: "Discover Kitchen",
+			iconRightName: "Discover Meals",
 		},
 		{
 			type: "CHECKOUT",
 			name: "Manage your dietary preference",
-			info:
-				"Tap, tap, done! Place the order with just a few clicks and pay with your preferred method.",
+			info: "Choose spice levels, portions, and preferences easily — your meals, your way.",
 			image: "/disc2.png",
+			iconLeft: Star,
+			iconRight: Zap,
+			iconLeftName: "Personalised",
+			iconRightName: "Fast Checkout",
 		},
 		{
 			type: "ORDER DETAIL",
 			name: "Track your order easily",
-			info:
-				"Follow your order’s journey from store to door. Stay updated at every stage with real-time notifications.",
+			info: "Follow your meal from preparation to delivery with real-time updates at every stage.",
 			image: "/disc3.png",
+			iconLeft: MapPin,
+			iconRight: Clock,
+			iconLeftName: "Track Delivery",
+			iconRightName: "Progress Status",
 		},
 	];
 	return (
@@ -44,13 +64,29 @@ const Discover = () => {
 					<h1 className="text-center text-brandBlack w-fit mx-auto text-5xl max-w-lg font-bold">
 						Discover meals, order, and track in the app{" "}
 					</h1>
-					<p className="text-center text-brandBlack w-fit mx-auto font-medium text-xl max-w-3xl">
-						Break down barriers and connect with people from all corners of the globe. LilyPad lets you
-						dive into unique, unfiltered conversations, no matter where you are or who you’re hoping{" "}
+					<p className="text-center text-brandBlack w-fit mx-auto font-medium text-xl max-w-[800px]">
+						From kitchen to doorstep, EatFresh connects you with verified chefs who prepare meals just for
+						you. Discover meals, place bulk orders, and track deliveries — all from one simple app.
 					</p>
 				</div>
 
-				<Download_ShareBtn />
+				<div className="w-fit mx-auto flex flex-wrap justify-center gap-4 mt-4">
+					<Link href="https://onelink.to/qfvgmm" target="_blank">
+						<CustomButton
+							name="Let’s see what the app is about"
+							left_icon={Smartphone}
+							className="text-white bg-brandRed hover:bg-transparent hover:text-black border-brandRed border-2 text-base !px-4"
+						/>
+					</Link>
+
+					<Link href="https://youtu.be/SR__amDl1c8?si=ogKYznd7siev9wpq" target="_blank">
+						<CustomButton
+							name="Watch the video"
+							left_icon={LuYoutube}
+							className="text-black bg-transparent hover:bg-brandRed hover:text-white border-brandRed border-2 text-base !px-4"
+						/>
+					</Link>
+				</div>
 
 				<div className="flex flex-wrap xl:flex-nowrap justify-center gap-16 md:gap-8 xl:justify-between max-w-[1100px] mx-auto mt-14 sm:mt-20 lg:mt-30">
 					{discProps?.map((d: Disc, index: number) => (
@@ -74,15 +110,15 @@ const Discover = () => {
 							</p>
 							<div className="flex gap-4 mt-5">
 								<CustomButton
-									name="Audio Conversation"
-									className="bg-[#F2F5FA] text-black cursor-auto !px-4 !py-5 hover:bg-[#F2F5FA] hover:text-black! cursor-default font-normal!"
-									left_icon={Mic}
+									name={d?.iconLeftName}
+									className="bg-[#F2F5FA] text-black cursor-auto !px-4 !py-5 hover:bg-[#F2F5FA] hover:text-black! cursor-default font-medium!"
+									left_icon={d?.iconLeft}
 									iconClass="size-4"
 								/>
 								<CustomButton
-									name="Messaging"
-									className="bg-[#F2F5FA] text-black cursor-auto !px-4 !py-5 hover:bg-[#F2F5FA] hover:text-black! cursor-default font-normal!"
-									left_icon={MessageCircle}
+									name={d?.iconRightName}
+									className="bg-[#F2F5FA] text-black cursor-auto !px-4 !py-5 hover:bg-[#F2F5FA] hover:text-black! cursor-default font-medium!"
+									left_icon={d?.iconRight}
 									iconClass="size-4"
 								/>
 							</div>

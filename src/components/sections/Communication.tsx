@@ -2,12 +2,19 @@ import React from "react";
 import Download_ShareBtn from "../Download_ShareBtn";
 import Image from "next/image";
 import CustomButton from "../CustomButton";
-import { Mic, MessageCircle } from "lucide-react";
+import { Mic, MessageCircle, Globe, Heart, Radio, Star, Shuffle } from "lucide-react";
 import { motion } from "framer-motion";
+import { PiSquaresFourBold } from "react-icons/pi";
+import { IconType } from "react-icons";
+
 interface Comm {
 	image: string;
 	name: string;
 	info: string;
+	iconLeft: IconType;
+	iconRight: IconType;
+	iconLeftName: string;
+	iconRightName: string;
 }
 
 const Communication = () => {
@@ -15,20 +22,31 @@ const Communication = () => {
 		{
 			name: "Meals for any category of appetite avaliable",
 			info:
-				"Taste the flavours of the world with our wide selection of restaurants — discover hidden gems.",
+				"From soups and stews to rice, pasta, and tubers — there’s something for every craving and lifestyle.",
 			image: "/comm-ex.png",
+			iconLeft: PiSquaresFourBold,
+			iconRight: Globe,
+			iconLeftName: "Various Categories",
+			iconRightName: "Diverse",
 		},
 		{
 			name: "Your busy week taken care of ",
 			info:
-				"Tap, tap, done! Place the order with just a few clicks and pay with your preferred method.",
+				"Order once, eat well all week. EatFresh is built for people who value time, quality, and consistency.",
 			image: "/comm2.png",
+			iconLeft: Heart,
+			iconRight: Radio,
+			iconLeftName: "Convinence",
+			iconRightName: "Reliable",
 		},
 		{
 			name: "Its like having your personal Chef",
-			info:
-				"Follow your order’s journey from store to door. Stay updated at every stage with real-time notifications.",
+			info: "Send custom requests, or special instructions with notes in each meal specially for you.",
 			image: "/comm3.png",
+			iconLeft: Star,
+			iconRight: Shuffle,
+			iconLeftName: "Personalised",
+			iconRightName: "Meal Subscription",
 		},
 	];
 	return (
@@ -36,14 +54,14 @@ const Communication = () => {
 			<div className="max-w-[1400px] w-full mx-auto">
 				<div className="flex flex-col gap-2">
 					<p className="text-center text-white w-fit mx-auto font-medium text-xl">
-						Instant Communication
+						Experience Lifestyle Comfort
 					</p>
 					<h1 className="text-center text-white w-fit mx-auto text-5xl max-w-lg font-bold">
-						Its like having your personal Chef
+						Its like having your personal Chef{" "}
 					</h1>
-					<p className="text-center text-white w-fit mx-auto font-medium text-xl max-w-3xl">
-						Break down barriers and connect with people from all corners of the globe. LilyPad lets you
-						dive into unique, unfiltered conversations, no matter where you are or who you’re hoping
+					<p className="text-center text-white w-fit mx-auto font-medium text-xl max-w-[800px]">
+						Experience the ease of having a chef who understands your taste, values quality ingredients,
+						and prepares every meal with attention, care, and consistency.
 					</p>
 				</div>
 
@@ -70,15 +88,15 @@ const Communication = () => {
 							</p>
 							<div className="flex gap-4 mt-5">
 								<CustomButton
-									name="Audio Conversation"
+									name={d?.iconLeftName}
 									className="bg-[#2F3A4A] text-white cursor-auto !px-4 !py-5 hover:bg-[#2F3A4A] font-normal! cursor-default"
-									left_icon={Mic}
+									left_icon={d?.iconLeft}
 									iconClass="size-4"
 								/>
 								<CustomButton
-									name="Messaging"
+									name={d?.iconRightName}
 									className="bg-[#2F3A4A] text-white cursor-auto !px-4 !py-5 hover:bg-[#2F3A4A] font-normal! cursor-default"
-									left_icon={MessageCircle}
+									left_icon={d?.iconRight}
 									iconClass="size-4"
 								/>
 							</div>

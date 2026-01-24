@@ -14,7 +14,7 @@ export default function Document() {
 				{/* open graph */}
 				<meta property="og:type" content="website" />
 				<meta property="og:site_name" content="EatFresh" />
-				<meta property="og:title" content="EatFresh - Your everyday meal freshly made" key="title" />
+				<meta property="og:title" content="EatFresh — Your Everyday Meals Freshly Made" key="title" />
 				<meta
 					property="og:description"
 					content="Your everyday meals freshly made just for you.
