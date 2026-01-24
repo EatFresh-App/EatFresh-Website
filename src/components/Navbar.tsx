@@ -87,7 +87,10 @@ const Navbar = () => {
 									/>
 								</Link>
 
-								<div className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer w-fit ml-auto py-3">
+								<Link
+									href="https://onelink.to/qfvgmm"
+									className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer w-fit ml-auto py-3"
+								>
 									<div className="relative w-[22px] h-[22px]">
 										<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
 									</div>
@@ -95,7 +98,7 @@ const Navbar = () => {
 										<Image src="/play.svg" fill alt="" style={{ objectFit: "contain" }} />
 									</div>
 									<p className="text-lg font-medium text-black ">Download App</p>
-								</div>
+								</Link>
 							</div>
 						</div>
 					</motion.div>
@@ -171,7 +174,10 @@ const Navbar = () => {
 					</div>
 
 					{/* download */}
-					<div className="xl:flex items-center gap-[13px] py-2.5 bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer w-fit ml-auto hidden">
+					<Link
+						href="https://onelink.to/qfvgmm"
+						className="xl:flex items-center gap-[13px] py-2.5 bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer w-fit ml-auto hidden"
+					>
 						<div className="relative w-[22px] h-[22px]">
 							<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
 						</div>
@@ -179,7 +185,7 @@ const Navbar = () => {
 							<Image src="/play.svg" fill alt="" style={{ objectFit: "contain" }} />
 						</div>
 						<p className="text-base font-medium text-black ">Download App</p>
-					</div>
+					</Link>
 
 					{/* menu button */}
 					<div

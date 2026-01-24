@@ -2,13 +2,27 @@ import React from "react";
 import Refer_Become from "../Refer_Become";
 import Image from "next/image";
 import CustomButton from "../CustomButton";
-import { Mic, MessageCircle } from "lucide-react";
+import {
+	Mic,
+	MessageCircle,
+	Gift,
+	Box,
+	TrendingUp,
+	Users,
+	ChartNoAxesColumnIncreasing,
+} from "lucide-react";
+import { PiChefHatBold } from "react-icons/pi";
 import { motion } from "framer-motion";
+import { IconType } from "react-icons";
 interface Vend {
 	image: string;
 	type: string;
 	name: string;
 	info: string;
+	iconLeft: IconType;
+	iconRight: IconType;
+	iconLeftName: string;
+	iconRightName: string;
 }
 
 const Vendors = () => {
@@ -17,21 +31,33 @@ const Vendors = () => {
 			type: "DELIVERY GUARANTEED",
 			name: "Own your business, Deliver your way",
 			info:
-				"Our offerings are flexible so you can customize them to your needs. Get started with your delivery people",
+				"Use your own riders or ours. EatFresh gives you flexibility while keeping orders flowing.",
 			image: "/vend1.svg",
+			iconLeft: Gift,
+			iconRight: Box,
+			iconLeftName: "Fresh Delivery",
+			iconRightName: "Custom Delivery",
 		},
 		{
 			type: "VISIBILITY",
 			name: "Boost your visibility & Unlock new growth",
-			info: "Stand out with in-app marketing to reach even more customers and increase sales.",
+			info:
+				"Get discovered by customers actively searching for quality meals near them through their feeds or discover page.",
 			image: "/vend2.jpg",
+			iconLeft: TrendingUp,
+			iconRight: PiChefHatBold,
+			iconLeftName: "Meal Visibility",
+			iconRightName: "Kitchen Visibility",
 		},
 		{
 			type: "ORDER MANAGEMENT",
 			name: "Connect with customers",
-			info:
-				"Turn customers into regulars with actionable data insights, respond to reviews or offer a loyalty program.",
+			info: "Manage orders, respond to feedback, and turn first-time buyers into loyal customers.",
 			image: "/vend3.jpg",
+			iconLeft: Users,
+			iconRight: ChartNoAxesColumnIncreasing,
+			iconLeftName: "Manage Customers",
+			iconRightName: "Payout History",
 		},
 	];
 
@@ -39,13 +65,16 @@ const Vendors = () => {
 		<div className="py-20 bg-brandLightRed px-3 sm:px-6 lg:px-10 2xl:px-0" id="vendor">
 			<div className="max-w-[1400px] w-full mx-auto">
 				<div className="flex flex-col gap-2">
-					<p className="text-center text-white w-fit mx-auto font-medium text-xl">Kitchen / Vendors </p>
+					<p className="text-center text-white w-fit mx-auto font-medium text-xl">
+						Kitchen / Chefs / Vendors{" "}
+					</p>
 					<h1 className="text-center text-white w-fit mx-auto text-5xl max-w-2xl font-bold">
 						Why roll with us as a FreshVendor?{" "}
 					</h1>
 					<p className="text-center text-white w-fit mx-auto font-medium text-lg max-w-3xl">
-						Break down barriers and connect with people from all corners of the globe. LilyPad lets you
-						dive into unique, unfiltered conversations, no matter where you are or who you’re hoping
+						Join a curated network of trusted chefs. FreshVendors receive consistent orders, growth tools,
+						and a premium onboarding welcome pack designed to help you launch, stand out, and scale with
+						confidence.
 					</p>
 				</div>
 
@@ -61,10 +90,10 @@ const Vendors = () => {
 							transition={{ duration: 0.5, ease: "easeInOut", delay: index * 0.2 }}
 							viewport={{ once: true }}
 						>
-							<div className="relative w-full lg:w-[250px] h-[200px] lg:h-[250px] rounded-xl overflow-hidden">
+							<div className="relative w-full h-[200px] lg:h-[250px] rounded-xl overflow-hidden">
 								<Image src={d?.image} fill alt="" className="object-cover overflow-hidden" />
 							</div>
-							<p className="text-center font-medium w-fit mx-auto text-white text-base">{d?.type}</p>
+							<p className="text-center font-medium w-fit mx-auto text-white text-base mt-2">{d?.type}</p>
 							<h1 className="text-center w-fit mx-auto text-white text-2xl lg:text-3xl max-w-[280px] font-bold leading-6.5 lg:leading-8">
 								{d?.name}
 							</h1>
@@ -73,15 +102,15 @@ const Vendors = () => {
 							</p>
 							<div className="flex gap-4 mt-auto">
 								<CustomButton
-									name="Audio Conversation"
+									name={d?.iconLeftName}
 									className="bg-[rgba(255,255,255,0.2)] text-white cursor-auto !px-4 !py-5 hover:bg-[rgba(255,255,255,0.2)] hover:text-white cursor-default font-normal!"
-									left_icon={Mic}
+									left_icon={d?.iconLeft}
 									iconClass="size-4"
 								/>
 								<CustomButton
-									name="Messaging"
+									name={d?.iconRightName}
 									className="bg-[rgba(255,255,255,0.2)] text-white cursor-auto !px-4 !py-5 hover:bg-[rgba(255,255,255,0.2)] hover:text-white cursor-default font-normal!"
-									left_icon={MessageCircle}
+									left_icon={d?.iconRight}
 									iconClass="size-4"
 								/>
 							</div>

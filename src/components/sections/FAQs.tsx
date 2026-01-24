@@ -10,39 +10,39 @@ import { MessageCircle } from "lucide-react";
 const FAQs = () => {
 	const faqs: { name: string; note: string }[] = [
 		{
-			name: "Is my identity really anonymous on LilyPad?",
+			name: "What is EatFresh?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"EatFresh is a bulk meal delivery platform that connects you with trusted local chefs who prepare fresh meals in advance and deliver them to you. It’s designed to help you eat well throughout the week without the daily stress of cooking or last-minute food orders.",
 		},
 		{
-			name: "Are my conversations secure on LilyPad",
+			name: "How does ordering on EatFresh work?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"You browse meals from verified chefs, choose your preferred portions and options, place an order, and track it in real time. Meals are prepared in bulk and delivered according to the stated delivery timeline, making weekly meal planning simple and reliable.",
 		},
 		{
-			name: "Can I report inappropriate behavior?",
+			name: "Are the chefs and kitchens on EatFresh verified?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Yes. Every chef and kitchen on EatFresh goes through a vetting process that includes food safety checks, quality reviews, and onboarding standards before being approved to sell on the platform.",
 		},
 		{
-			name: "How are matches made?",
+			name: "Can I customise my meals?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Absolutely. You can select portion sizes, spice levels, and other available options depending on the meal. Some chefs also allow special instructions, which you can share directly during your order.",
 		},
 		{
-			name: "Do I need to create an account to use LilyPad?",
+			name: "How do deliveries work and when will I receive my meals?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Delivery timelines vary by chef and meal type, but you’ll always see an estimated delivery date before placing an order. You can track your order from preparation to delivery and receive updates at every stage.",
 		},
 		{
-			name: "Is there an age restriction for using LilyPad?",
+			name: "Is EatFresh suitable for busy schedules or meal planning?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Yes. EatFresh is built for people who want consistency and convenience. By ordering meals in bulk, you reduce daily decision-making, save time, and always have food ready when you need it.",
 		},
 		{
-			name: "Is LilyPad Free to Use?",
+			name: "How does EatFresh ensure food quality and safety?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Food safety is a top priority. Chefs are required to follow strict hygiene standards, use proper packaging, and maintain quality throughout preparation and delivery. EatFresh also provides ongoing food safety guidance to vendors to ensure consistent standards.",
 		},
 	];
 
@@ -51,19 +51,17 @@ const FAQs = () => {
 			<div className="max-w-[1400px] w-full mx-auto">
 				<div className="flex flex-col gap-4">
 					<p className="text-center text-brandBlack w-fit mx-auto font-medium text-xl">FAQs </p>
-					<h1 className="text-center text-brandBlack w-fit mx-auto text-5xl max-w-lg font-bold">
+					<h1 className="text-center text-brandBlack w-fit mx-auto text-5xl max-w-md font-bold">
 						Likely Questions You May Have{" "}
 					</h1>
-					<p className="text-center text-brandBlack w-fit mx-auto font-medium text-xl max-w-3xl">
-						LilyPad prioritizes your security and peace of mind. Every conversation is protected with
-						end-to-end encryption, and we provide tools to ensure a safe and respectful experience every
-						time you connect.
+					<p className="text-center text-brandBlack w-fit mx-auto font-medium text-xl">
+						Everything you need to know about ordering, deliveries, vendors, and food safety on EatFresh.
 					</p>
 					<CustomButton
 						name={
 							<span>
 								Cannot find what you need? <br className="sm:hidden" />
-								Send us a message
+								Send us an email
 							</span>
 						}
 						right_icon={MessageCircle}

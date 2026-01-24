@@ -5,7 +5,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>EatFresh - Your everyday meal freshly made</title>
+				<title>EatFresh — Your Everyday Meals Freshly Made</title>
 			</Head>
 			<Component {...pageProps} />
 		</>
