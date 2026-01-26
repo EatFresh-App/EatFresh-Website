@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactElement, ReactNode } from "react";
 import { Dot } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 interface FootItem {
-	name: string;
+	name: string | ReactElement;
 	link?: string;
 }
 
@@ -73,7 +73,13 @@ const Footer = () => {
 			name: "Contact",
 			items: [
 				{
-					name: "Benagos Technologies LimitedLagos, Nigeria",
+					name: (
+						<p>
+							Benagos Technologies Limited
+							<br />
+							Lagos, Nigeria
+						</p>
+					),
 				},
 				{
 					name: "eatfresh@benagos.com",
@@ -94,7 +100,7 @@ const Footer = () => {
 				"https://benagos.notion.site/EatFresh-Privacy-2dc3c9f91dc781a3a669d240df47c806?source=copy_link",
 		},
 		{
-			name: "Contact LilyPad",
+			name: "Cookie Policy",
 			link:
 				"https://benagos.notion.site/EatFresh-Cookie-Policy-2e73c9f91dc780d6a211f46888946ebb?source=copy_link",
 		},
@@ -128,7 +134,7 @@ const Footer = () => {
 												m.link ? "text-brandRed" : "text-white"
 											} transition-all ease-in-out duration-300`}
 										>
-											<p className="max-w-xs -tracking-[0.2px]">{m?.name}</p>
+											<div className="max-w-xs -tracking-[0.2px]">{m?.name}</div>
 										</Link>
 									))}
 								</div>
