@@ -90,6 +90,7 @@ const Navbar = () => {
 								<Link
 									href="https://onelink.to/qfvgmm"
 									className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer w-fit ml-auto py-3"
+									target="_blank"
 								>
 									<div className="relative w-[22px] h-[22px]">
 										<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
