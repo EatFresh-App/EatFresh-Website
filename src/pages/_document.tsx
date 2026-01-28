@@ -23,13 +23,13 @@ export default function Document() {
 				<meta property="og:url" content="https://eatfresh.benagos.com" />
 				<meta property="og:author" name="Afolabi Babatunde Joseph" />
 				<meta property="og:author" name="Ehizojie Ihayere" />
-				<meta property="og:image" content="https://i.ibb.co/fY9yWvnM/Eat-Fresh.png?v=2" />
+				<meta property="og:image" content="https://eatfresh.benagos.com/images/eatfresh.png" />
 
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content="EatFresh — Your Everyday Meals Freshly Made" />
 				<meta name="twitter:description" content="Your everyday meals freshly made just for you." />
-				<meta name="twitter:image" content="https://i.ibb.co/fY9yWvnM/Eat-Fresh.png?v=2" />
+				<meta name="twitter:image" content="https://eatfresh.benagos.com/imageseatfresh.png" />
 			</Head>
 			<body className="antialiased">
 				<Main />
