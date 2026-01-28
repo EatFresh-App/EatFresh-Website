@@ -23,6 +23,7 @@ export default function Document() {
 				<meta property="og:url" content="https://eatfresh.benagos.com" />
 				<meta property="og:author" name="Afolabi Babatunde Joseph" />
 				<meta property="og:author" name="Ehizojie Ihayere" />
+				<meta name="og:image" content="https://i.ibb.co/vCfk98ws/favicon.jpg" />
 
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />
