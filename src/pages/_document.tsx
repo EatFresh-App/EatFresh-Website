@@ -29,7 +29,7 @@ export default function Document() {
 				<meta name="twitter:card" content="summary_large_image" />
 				<meta name="twitter:title" content="EatFresh — Your Everyday Meals Freshly Made" />
 				<meta name="twitter:description" content="Your everyday meals freshly made just for you." />
-				<meta name="twitter:image" content="https://eatfresh.benagos.com/imageseatfresh.png" />
+				<meta name="twitter:image" content="https://eatfresh.benagos.com/images/eatfresh.png" />
 			</Head>
 			<body className="antialiased">
 				<Main />
